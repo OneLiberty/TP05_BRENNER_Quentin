@@ -1,0 +1,16 @@
+<app-search (searchResults)="onSearchResults($event)"></app-search>
+<hr>
+<div class="catalogue">
+  <div *ngFor="let produit of produits" class="produit">
+    <h2>{{ produit.name }}</h2>
+    <img [src]="produit.image" alt="{{ produit.name }}">
+    <p>{{ produit.description }}</p>
+    <hr>
+    <div class="product-info">
+      <p class="price">Prix : {{ produit.price }}€</p>
+      <button (click)="onAddToCart(produit)">
+        <i class="fas fa-shopping-cart"></i> Ajouter au panier
+      </button>
+    </div>
+  </div>
+</div>

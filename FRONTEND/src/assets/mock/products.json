@@ -1,0 +1,148 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Clavier Sans Fil",
+            "description": "Clavier sans fil haute précision avec design ergonomique.",
+            "price": 39.99,
+            "category": "Électronique",
+            "image": "https://picsum.photos/200/200?random=1"
+        },
+        {
+            "id": 2,
+            "name": "Souris Sans Fil",
+            "description": "Souris sans fil haute précision avec design ergonomique.",
+            "price": 29.99,
+            "category": "Électronique",
+            "image": "https://picsum.photos/200/200?random=2"
+        },
+        {
+            "id": 3,
+            "name": "Casque Bluetooth",
+            "description": "Casque antibruit sans fil avec longue autonomie.",
+            "price": 89.99,
+            "category": "Électronique",
+            "image": "https://picsum.photos/200/200?random=3"
+        },
+        {
+            "id": 4,
+            "name": "Support pour Smartphone",
+            "description": "Support ajustable pour smartphones et tablettes.",
+            "price": 14.99,
+            "category": "Accessoires",
+            "image": "https://picsum.photos/200/200?random=4"
+        },
+        {
+            "id": 5,
+            "name": "Hub USB-C",
+            "description": "Hub USB-C multi-port avec HDMI, USB 3.0 et lecteur de carte SD.",
+            "price": 39.99,
+            "category": "Électronique",
+            "image": "https://picsum.photos/200/200?random=5"
+        },
+        {
+            "id": 6,
+            "name": "Clavier Mécanique",
+            "description": "Clavier mécanique rétroéclairé RGB avec touches personnalisables.",
+            "price": 79.99,
+            "category": "Électronique",
+            "image": "https://picsum.photos/200/200?random=6"
+        },
+        {
+            "id": 7,
+            "name": "Chargeur Portable",
+            "description": "Chargeur portable de 10 000mAh avec capacité de charge rapide.",
+            "price": 24.99,
+            "category": "Accessoires",
+            "image": "https://picsum.photos/200/200?random=7"
+        },
+        {
+            "id": 8,
+            "name": "Tracker de Fitness",
+            "description": "Tracker de fitness étanche avec moniteur de fréquence cardiaque.",
+            "price": 49.99,
+            "category": "Wearables",
+            "image": "https://picsum.photos/200/200?random=8"
+        },
+        {
+            "id": 9,
+            "name": "Ampoule Intelligente",
+            "description": "Ampoule intelligente Wi-Fi avec luminosité et couleur ajustables.",
+            "price": 19.99,
+            "category": "Maison",
+            "image": "https://picsum.photos/200/200?random=9"
+        },
+        {
+            "id": 10,
+            "name": "Housse pour Ordinateur Portable",
+            "description": "Housse de protection pour ordinateur portable avec doublure intérieure douce.",
+            "price": 17.99,
+            "category": "Accessoires",
+            "image": "https://picsum.photos/200/200?random=10"
+        },
+        {
+            "id": 11,
+            "name": "Chargeur Sans Fil",
+            "description": "Chargeur sans fil rapide compatible avec tous les appareils Qi.",
+            "price": 29.99,
+            "category": "Électronique",
+            "image": "https://picsum.photos/200/200?random=11"
+        },
+        {
+            "id": 12,
+            "name": "Station Météo Intelligente",
+            "description": "Station météo avec capteurs de température, humidité et pression.",
+            "price": 59.99,
+            "category": "Maison",
+            "image": "https://picsum.photos/200/200?random=12"
+        },
+        {
+            "id": 13,
+            "name": "Lampe de Bureau LED",
+            "description": "Lampe de bureau LED avec luminosité réglable et port USB.",
+            "price": 34.99,
+            "category": "Maison",
+            "image": "https://picsum.photos/200/200?random=13"
+        },
+        {
+            "id": 14,
+            "name": "Enceinte Bluetooth",
+            "description": "Enceinte Bluetooth portable avec son stéréo et basses puissantes.",
+            "price": 49.99,
+            "category": "Électronique",
+            "image": "https://picsum.photos/200/200?random=14"
+        },
+        {
+            "id": 15,
+            "name": "Caméra de Sécurité",
+            "description": "Caméra de sécurité Wi-Fi avec vision nocturne et détection de mouvement.",
+            "price": 79.99,
+            "category": "Maison",
+            "image": "https://picsum.photos/200/200?random=15"
+        },
+        {
+            "id": 16,
+            "name": "Thermostat Intelligent",
+            "description": "Thermostat intelligent programmable avec contrôle à distance.",
+            "price": 129.99,
+            "category": "Maison",
+            "image": "https://picsum.photos/200/200?random=16"
+        },
+        {
+            "id": 17,
+            "name": "Montre Connectée",
+            "description": "Montre connectée avec suivi d'activité et notifications.",
+            "price": 199.99,
+            "category": "Wearables",
+            "image": "https://picsum.photos/200/200?random=17"
+        },
+        {
+            "id": 18,
+            "name": "Projecteur Portable",
+            "description": "Projecteur portable avec résolution HD, haut-parleurs intégrés et batterie rechargeable.",
+            "price": 249.99,
+            "category": "Électronique",
+            "image": "https://picsum.photos/200/200?random=18"
+        }
+    ]
+}

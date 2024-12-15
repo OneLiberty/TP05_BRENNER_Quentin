@@ -1,0 +1,10 @@
+<div *ngFor="let produit of produits$ | async">
+    <h2>{{ produit.name }}</h2>
+    <img [src]="produit.image" alt="{{ produit.name }}">
+    <p>{{ produit.description }}</p>
+    <p>Prix : {{ produit.price }}€</p>
+    <button (click)="onRemoveFromCart(produit.id)">
+      <i class="fas fa-trash"></i> Supprimer
+    </button>
+    <p>I'm here</p>
+</div>
