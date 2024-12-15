@@ -1,10 +1,23 @@
-<div *ngFor="let produit of produits$ | async">
-    <h2>{{ produit.name }}</h2>
-    <img [src]="produit.image" alt="{{ produit.name }}">
-    <p>{{ produit.description }}</p>
-    <p>Prix : {{ produit.price }}€</p>
-    <button (click)="onRemoveFromCart(produit.id)">
-      <i class="fas fa-trash"></i> Supprimer
-    </button>
-    <p>I'm here</p>
-</div>
+<div *ngIf="(produits$ | async) as produits">
+    <ul>
+      <li *ngFor="let produit of produits" class="product-item">
+        <span class="product-name">{{ produit.name }}</span>
+        <span class="product-quantity">
+          <button (click)="onUpdateQuantity(produit.id, produit.quantity - 1)">-</button>
+          <input type="number" [value]="produit.quantity" (change)="onUpdateQuantity(produit.id, $event)">
+          <button (click)="onUpdateQuantity(produit.id, produit.quantity + 1)">+</button>
+        </span>
+        <span class="product-price">{{ produit.price }}€</span>
+        <button class="remove-button" (click)="onRemoveFromCart(produit.id)">
+          <i class="fas fa-trash"></i> Supprimer
+        </button>
+      </li>
+    </ul>
+    <div *ngIf="(produits$ | async)?.length" class="recap">
+      <p>Montant total : {{ totalAmount$ | async | number:'1.2-2' }}€</p>
+      <button (click)="onPayer()" class="recap-button">Payer</button>
+    </div>
+  </div>
+  <div *ngIf="!(produits$ | async)?.length" class="panier-vide">
+    <p>Votre panier est vide.</p>
+  </div>    

@@ -1,0 +1,126 @@
+.panier-vide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  margin: 20px;
+  font-weight: 200;
+}
+
+.panier-vide p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #666;
+  margin: 0;
+}
+
+.product-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 10px 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  border: 1px solid #0489c6;  
+  padding: 20px;
+}
+
+.product-name {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product-quantity {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.product-quantity input {
+  width: 50px;
+  text-align: center;
+  margin: 0 5px;
+}
+
+.product-price {
+  text-align: right;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.remove-button {
+  align-self: flex-end;
+}
+
+.recap {
+  margin: 20px;
+  text-align: right;
+}
+
+.recap p {
+  font-weight: bold;
+}
+
+.recap-button {
+  height: 55px;
+  background: #F2F2F2;
+  border-radius: 11px;
+  border: 0;
+  outline: none;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  background: linear-gradient(180deg, #0ba0e5 0%, #0878b5 60%, #065a8a 80%);
+  box-shadow: 0px 0px 0px 0px #FFFFFF, 0px 0px 0px 0px #0878b5;
+  transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+  width: 5%;
+}
+
+.recap-button:hover {
+  box-shadow: 0px 0px 0px 2px #FFFFFF, 0px 0px 0px 4px #0ba0e5;
+}
+
+.recap-button:active {
+  background: linear-gradient(180deg, #0878b5 0%, #065a8a 60%, #044a6e 80%);
+  box-shadow: 0px 0px 0px 2px #FFFFFF, 0px 0px 0px 4px #065a8a;
+  transform: scale(0.95, 0.95);
+}
+
+/* Media queries for responsive design */
+@media (min-width: 768px) {
+  .product-item {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 200px 10px 200px;
+  }
+
+  .product-name {
+      flex: 2;
+      margin-left: 20px;
+      margin-bottom: 0;
+  }
+
+  .product-quantity {
+      flex: 0;
+      margin-bottom: 0;
+  }
+
+  .product-price {
+      flex: 1;
+      text-align: right;
+      margin-bottom: 0;
+  }
+
+  .remove-button {
+      flex: 0;
+      margin-left: 10px;
+      align-self: auto;
+  }
+
+  .recap {
+      margin: 50px 100px 0 0;
+  }
+}

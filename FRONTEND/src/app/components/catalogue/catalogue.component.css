@@ -15,8 +15,8 @@
     border: 2px solid #0489c6;
     border-radius: 10px;
     background: #e0e0e0dd;
-    box-shadow:  21px 21px 54px #5a5a5a,
-                 -21px -21px 54px #ffffff23;
+    box-shadow: 21px 21px 54px #5a5a5a,
+        -21px -21px 54px #ffffff23;
 }
 
 hr {
@@ -53,12 +53,34 @@ hr {
     margin-right: auto;
     margin-top: auto;
 }
-  
+
 .product-info .price {
     margin-right: 10px;
 }
 
 .product-info button {
-    font-size: 1.0em; 
+    font-size: 1.0em;
     padding: 5px 5px;
+}
+
+button.added {
+    background-color: green;
+    transition: background-color 0.5s ease;
+}
+
+.added-text {
+    color: green;
+    animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }

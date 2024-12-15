@@ -1,18 +1,18 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { Subscription } from 'rxjs';
-import { CatalogueService } from '../../services/catalogue.service';
-import { Produit } from '../../models/produit.model';
-import { CommonModule } from '@angular/common';
-import { SearchComponent } from '../search/search.component';
 import { Store } from '@ngxs/store';
+import { Subscription } from 'rxjs';
+import { CommonModule } from '@angular/common';
+import { Produit } from '../../models/produit.model';
+import { CatalogueService } from '../../services/catalogue.service';
 import { AddProduit } from '../panier/panier.actions';
+import { SearchComponent } from '../search/search.component';
 
 @Component({
   selector: 'app-catalogue',
   standalone: true,
   imports: [CommonModule, SearchComponent],
   templateUrl: './catalogue.component.html',
-  styleUrl: './catalogue.component.css'
+  styleUrls: ['./catalogue.component.css']
 })
 export class CatalogueComponent implements OnInit, OnDestroy {
   produits: Produit[] = [];

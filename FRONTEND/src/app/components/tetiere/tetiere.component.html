@@ -1,9 +1,21 @@
 <header>
-    <h1>Projet WEB de Quentin BRENNER - TP05</h1>
-    <nav>
-        <ul>
-            <li><a href="https://gitlab.com/OneLiberty">Gitlab</a></li>
-            <li><a href="#about">About</a></li>
-        </ul>
-    </nav>
+  <h1 [routerLink]="['/']">Projet WEB de Quentin BRENNER - TP05</h1>
+  <nav>
+    <ul>
+      <li><a href="https://gitlab.com/OneLiberty">Gitlab</a></li>
+      <li><a href="#about">About</a></li>
+      <li class="dropdown" (mouseenter)="toggleDropdown(true)" (mouseleave)="toggleDropdown(false)">
+        <a [routerLink]="['/panier']">Panier ({{ nombreProduits$ | async }})</a>
+        <div class="dropdown-content" *ngIf="dropdownOpen">
+          <ul>
+            <li *ngFor="let produit of produits$ | async">
+                <span>{{ produit.name }}</span>
+                <span>{{ produit.quantity }}</span>
+            </li>
+          </ul>
+          <button [routerLink]="['/panier']">Aller au panier</button>
+        </div>
+      </li>
+    </ul>
+  </nav>
 </header>

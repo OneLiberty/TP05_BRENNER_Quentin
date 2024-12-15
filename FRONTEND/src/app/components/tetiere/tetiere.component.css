@@ -4,7 +4,7 @@ header {
     align-items: center;
     padding: 15px;
     background-color: #f8f9fa;
-    border-bottom: 2px solid #0489c6;  
+    border-bottom: 2px solid #0489c6;
     font-weight: 200;
 }
 
@@ -23,13 +23,107 @@ nav ul {
 
 nav ul li {
     margin-right: 20px;
+    position: relative;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #007bff;
+    cursor: pointer;
 }
 
 nav ul li a:hover {
     text-decoration: underline;
+}
+
+nav ul li.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    right: 0;
+}
+
+.dropdown-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+    font-weight: 400;
+}
+
+.dropdown-content ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    width: 100%;
+}
+
+.dropdown-content ul li span {
+    display: block;
+    margin-left: 10px;
+}
+
+.dropdown-content button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.dropdown-content button:hover {
+    background-color: #0056b3;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    header {
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    header h1 {
+        margin-left: 0;
+        margin-right: 100px;
+        font-size: 18px;
+    }
+
+    nav ul {
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 0 0 10px 20px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    .dropdown-content {
+        min-width: 150px;
+        padding: 8px 12px;
+    }
+
+    .dropdown-content ul li {
+        padding: 6px 0;
+    }
+
+    .dropdown-content button {
+        padding: 6px 12px;
+    }
 }
