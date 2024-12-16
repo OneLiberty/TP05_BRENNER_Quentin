@@ -2,8 +2,7 @@
   <h1 [routerLink]="['/']">Projet WEB de Quentin BRENNER - TP05</h1>
   <nav>
     <ul>
-      <li><a href="https://gitlab.com/OneLiberty">Gitlab</a></li>
-      <li><a href="#about">About</a></li>
+      <li><a [routerLink]="['/']">Catalogue</a></li>
       <li class="dropdown" (mouseenter)="toggleDropdown(true)" (mouseleave)="toggleDropdown(false)">
         <a [routerLink]="['/panier']">Panier ({{ nombreProduits$ | async }})</a>
         <div class="dropdown-content" *ngIf="dropdownOpen">

@@ -19,6 +19,15 @@
         -21px -21px 54px #ffffff23;
 }
 
+h1 {
+    text-align: center;
+    margin: 20px;
+    margin-top: -10px;
+    font-weight: 150;
+    font-size: 40px;
+    color: #0489c6;
+}
+
 hr {
     margin: 16px 0;
     border: 0;

@@ -1,4 +1,7 @@
-<div *ngIf="(produits$ | async) as produits">
+<h1>Panier</h1>
+
+<div class="panier-container">
+  <div *ngIf="(produits$ | async) as produits" class="panier">
     <ul>
       <li *ngFor="let produit of produits" class="product-item">
         <span class="product-name">{{ produit.name }}</span>
@@ -13,11 +16,14 @@
         </button>
       </li>
     </ul>
-    <div *ngIf="(produits$ | async)?.length" class="recap">
+  </div>
+  <div *ngIf="(produits$ | async)?.length" class="recap-container">
+    <div class="recap">
       <p>Montant total : {{ totalAmount$ | async | number:'1.2-2' }}€</p>
       <button (click)="onPayer()" class="recap-button">Payer</button>
     </div>
   </div>
-  <div *ngIf="!(produits$ | async)?.length" class="panier-vide">
-    <p>Votre panier est vide.</p>
-  </div>    
+</div>
+<div *ngIf="!(produits$ | async)?.length" class="panier-vide">
+  <p>Votre panier est vide.</p>
+</div>
